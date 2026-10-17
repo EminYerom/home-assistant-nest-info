@@ -1,0 +1,14 @@
+# Keep local tooling and private installation material out of this public example.
+.DS_Store
+Thumbs.db
+node_modules/
+__pycache__/
+*.pyc
+.env
+.env.*
+secrets.yaml
+configuration.yaml
+.storage/
+*.log
+*.bak
+*.zip

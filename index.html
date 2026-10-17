@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Information about Home Assistant Nest, a personal household thermostat connection.">
+  <meta name="color-scheme" content="light dark">
+  <title>Home Assistant Nest — About the connection</title>
+  <style>
+    :root{color-scheme:light dark;--bg:#f6f7f3;--paper:#fff;--ink:#172c29;--muted:#52635f;--line:#d7e0da;--accent:#146356;--soft:#e9f2ec}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}a{color:var(--accent);text-underline-offset:.2em}a:hover{text-decoration-thickness:2px}a:focus-visible{outline:3px solid var(--accent);outline-offset:5px;border-radius:2px}.skip{position:absolute;left:1rem;top:-6rem;padding:.5rem 1rem;background:var(--paper);z-index:1}.skip:focus{top:1rem}.wrap{max-width:780px;margin:auto;padding:0 28px}header{padding:30px 0 22px;border-bottom:1px solid var(--line)}.brand{font-weight:700;letter-spacing:-.025em;font-size:1.15rem}nav{display:flex;flex-wrap:wrap;gap:10px 24px;margin-top:14px;font-size:.9rem}nav a[aria-current="page"]{font-weight:700;text-decoration:none;color:var(--ink)}main{padding:48px 0 24px}.eyebrow{margin:0 0 16px;color:var(--accent);font-size:.75rem;font-weight:750;letter-spacing:.11em;text-transform:uppercase}h1{font-size:clamp(2rem,5vw,2.8rem);line-height:1.15;letter-spacing:-.04em;margin:0 0 22px;max-width:620px}h2{font-size:1.15rem;line-height:1.35;letter-spacing:-.015em;margin:0 0 12px}p{margin:0 0 16px}.lead{font-size:1.16rem;color:var(--muted);max-width:630px}.note{padding:18px 20px;background:var(--soft);border-left:3px solid var(--accent);border-radius:0 8px 8px 0;margin:26px 0 34px}.note p{margin:0}section{padding:25px 0;border-top:1px solid var(--line)}ul{padding-left:1.25rem;margin:0}li+li{margin-top:8px}footer{border-top:1px solid var(--line);padding:23px 0 34px;color:var(--muted);font-size:.82rem}footer p{margin:0}footer a{white-space:nowrap}@media(max-width:480px){.wrap{padding:0 22px}main{padding-top:34px}header{padding-top:23px}}@media(prefers-color-scheme:dark){:root{--bg:#10201e;--paper:#172c29;--ink:#eef4ef;--muted:#b9c9c2;--line:#354943;--accent:#a0dcc6;--soft:#1b3630}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="wrap">
+    <header>
+      <div class="brand">Home Assistant Nest</div>
+      <nav aria-label="Information pages">
+        <a href="index.html" aria-current="page">About</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Use information</a>
+      </nav>
+    </header>
+    <main id="main">
+      <p class="eyebrow">Personal household integration</p>
+      <h1>Thermostat control at home and away.</h1>
+      <p class="lead">Home Assistant Nest connects an authorized household thermostat to a private Home Assistant installation, so household members can check the temperature and use its controls in one place.</p>
+      <div class="note"><p>Setup is in progress. These pages describe the intended connection; final authorization and checks are still pending. Once connected, thermostat readings and controls will be available through the household’s Home Assistant app to its authorized users.</p></div>
+      <section aria-labelledby="features">
+        <h2 id="features">What the connection does</h2>
+        <ul>
+          <li>Shows the authorized thermostat’s temperature, humidity, operating mode, and target temperatures.</li>
+          <li>Provides supported temperature, mode, and fan controls through Home Assistant.</li>
+          <li>Receives device updates through Google Nest and Google Cloud Pub/Sub.</li>
+        </ul>
+      </section>
+      <section aria-labelledby="permissions">
+        <h2 id="permissions">Permission stays with the account holder</h2>
+        <p>The Google account holder selects the thermostat during authorization and can revoke the connection later. Access to the household dashboard depends on Home Assistant account permissions.</p>
+        <p>The thermostat is not exposed to the household’s Gemini assistant. Read the <a href="privacy.html">privacy information</a> for details about permissions, storage, and revoking access.</p>
+      </section>
+    </main>
+    <footer>
+      <p>Information for a personal household connection. Updated October 17, 2026.</p>
+      <p><a href="privacy.html">Privacy</a> · <a href="terms.html">Use information</a></p>
+    </footer>
+  </div>
+</body>
+</html>
